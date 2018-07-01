@@ -1,0 +1,188 @@
+html {
+  background: url(http://unsplash.it/1500/1000?blur=50) #018DED;
+  /* background:  #018DED; */
+  background-size:cover;
+  font-family:'helvetica neue';
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display:flex;
+  flex:1;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  align-items: center;
+  min-width: 40rem;
+  min-height: 100vh;
+}
+
+.container {
+  width: 36rem;
+  height: 36rem;
+  border: 0.5rem solid white;
+  border-radius: 50%;
+  position: relative;
+  background: url(http://unsplash.it/360/360?blur=50) black;
+  /* background: green; */
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+}
+
+.hand {
+  height: 0.5rem;
+  position: absolute;
+  background-color: white;
+  border-radius: 10rem;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand.hour-hand {
+  width: 12rem;
+  top: 50%;
+  left: 6rem; /* radius - width */
+  transform-origin: 100%;
+}
+
+.hand.min-hand {
+  width: 16rem;
+  top: 50%;
+  left: 2rem;
+  transform-origin: 100%;
+}
+
+.hand.sec-hand {
+  width: 20rem;
+  top: 50%;
+  left: 2rem;
+  transform-origin: 16rem; /* radius of the container */
+}
+
+.dot {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: black;
+  left: 17.5rem;
+  top: 17.5rem;
+}
+
+.number {
+  width: 15rem;
+  height: 0.1rem;
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+  transform-origin: 100%;
+  color: white;
+}
+
+.clock-num {
+  position: absolute;
+  top: -1rem;
+}
+
+.number.one {
+  transform: rotate(120deg);
+}
+
+.clock-num.num1 {
+  transform: rotate(240deg);
+}
+
+.number.two {
+  transform: rotate(150deg);
+}
+
+.clock-num.num2 { 
+  transform: rotate(210deg);
+}
+
+.number.three {
+  transform: rotate(180deg);
+}
+
+.clock-num.num3 { 
+  transform: rotate(180deg);
+}
+
+.number.four {
+  transform: rotate(210deg);
+}
+
+.clock-num.num4 { 
+  transform: rotate(150deg);
+}
+
+.number.five {
+  transform: rotate(240deg);
+}
+
+.clock-num.num5 { 
+  transform: rotate(120deg);
+}
+
+.number.six {
+  transform: rotate(270deg);
+}
+
+.clock-num.num6 { 
+  transform: rotate(90deg);
+}
+
+.number.seven {
+  transform: rotate(300deg);
+}
+
+.clock-num.num7 { 
+  transform: rotate(60deg);
+}
+
+.number.eight {
+  transform: rotate(330deg);
+}
+
+.clock-num.num8 { 
+  transform: rotate(30deg);
+}
+
+.number.nine {
+  transform: rotate(360deg);
+}
+
+.clock-num.num9 { 
+  transform: rotate(0deg);
+}
+
+.number.ten {
+  transform: rotate(390deg);
+}
+
+.clock-num.num10 { 
+  transform: rotate(-30deg);
+}
+
+.number.eleven {
+  transform: rotate(420deg);
+}
+
+.clock-num.num11 { 
+  transform: rotate(-60deg);
+}
+
+.number.twelve {
+  transform: rotate(450deg);
+}
+
+.clock-num.num12 { 
+  transform: rotate(-90deg);
+}
